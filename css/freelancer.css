@@ -79,6 +79,10 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
+#ribbon {
+    margin-top: 110px;
+}
+
 header {
     text-align: center;
     color: #fff;
