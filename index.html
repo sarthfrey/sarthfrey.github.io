@@ -11,6 +11,8 @@
 
     <title>Sarth Frey</title>
 
+    <link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/558615276816580608/ELOZe7jI.jpeg">
+
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -59,7 +61,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#page-top">SARTH FREY</a>
+                <a class="navbar-brand" href="#page-top">Sarth Frey</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -77,6 +79,9 @@
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
                     </li>
+                    <li>
+                        <a href="https://sarthfrey.wordpress.com/" target="_blank">Blog</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -92,12 +97,52 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-text">
-                        <span class="name">Sarth Frey</span>
+                        <!-- <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/sarth.frey" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li></li><li></li><li></li><li></li>
+                            <li>
+                                <a href="https://ca.linkedin.com/pub/sarth-frey/80/287/911" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li></li><li></li><li></li><li></li>
+                            <li> -->
+                                <span class="name">SARTH FREY</span>
+                            <!-- </li>
+                            <li></li><li></li><li></li><li></li>
+                            <li>
+                                <a href="https://github.com/sarthfrey" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                            <li></li><li></li><li></li><li></li>
+                            <li>
+                                <a href="https://sarthfrey.wordpress.com/" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-wordpress"></i></a>
+                            </li>
+                        </ul> -->
                         <hr class="star-light">
-                        <span class="skills">A thinker who likes to tinker</span>
+                        <span class="skills">The thinker and party drinker who likes to tinker.</span>
                     </div>
                     <br><br>
-                    <img class="img-responsive" src="img/uofthacks.jpg" alt="">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/sarth.frey" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li></li><li></li><li></li><li></li>
+                        <li>
+                            <a href="https://ca.linkedin.com/pub/sarth-frey/80/287/911" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                        <li></li><li></li><li></li><li></li>
+                        <li>
+                            <img class="img-responsive" src="img/uofthacks.jpg" alt="">
+                        </li>
+                        <li></li><li></li><li></li><li></li>
+                        <li>
+                            <a href="https://github.com/sarthfrey" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+                        </li>
+                        <li></li><li></li><li></li><li></li>
+                        <li>
+                            <a href="https://sarthfrey.wordpress.com/" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-wordpress"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -134,10 +179,7 @@
                         <b>Markup</b>: HTML and XML.
                     </p>
                     <p>
-                        <b>IDEs</b>: Netbeans, Eclipse, Android Studio, IDLE, PyCharm, and Arduino IDE.
-                    </p>
-                    <p>
-                        <b>Editors</b>: Atom, Sublime Text, Notepad++.
+                        <b>IDEs and Editors</b>: Netbeans, Eclipse, Android Studio, IDLE, PyCharm, Arduino IDE, Atom, Vim, Nano, and Sublime Text.
                     </p>
                 </div>
             </div>
@@ -300,6 +342,9 @@
                             </li>
                             <li>
                                 <a href="https://github.com/sarthfrey" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://sarthfrey.wordpress.com/" class="btn-social btn-outline" target="_blank"><i class="fa fa-fw fa-wordpress"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -580,6 +625,43 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
+
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow13.js"></script>
+<noscript>Not seeing a <a href="http://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+<h1>  </h1>-->
+
+    <!-- child of the body tag -->
+    <span id="top-link-block" class="hidden">
+    <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i class="glyphicon glyphicon-chevron-up"></i>
+    </a>
+    </span><!-- /top-link-block -->
+
+    <script>
+    // Only enable if the document has a long scroll bar
+    // Note the window height + offset
+    if ( ($(window).height() + 100) < $(document).height() ) {
+        $('#top-link-block').removeClass('hidden').affix({
+            // how far to scroll down before link "slides" into view
+            offset: {top:100}
+        });
+    }
+    </script>
+
+    <style>
+    #top-link-block.affix-top {
+        position: absolute; /* allows it to "slide" up into view */
+        bottom: -82px;
+        right: 18px;
+    }
+    #top-link-block.affix {
+        position: fixed; /* keeps it on the bottom once in view */
+        bottom: 18px;
+        right: 18px;
+    }
+    </style>
+
 
 </body>
 
