@@ -180,6 +180,10 @@ header .intro-text .skills {
     border: 0;
 }
 
+.topPriority a {
+    z-index: 10;
+}
+
 section {
     padding: 100px 0;
 }
@@ -220,6 +224,9 @@ section.success a.active {
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 auto 15px auto;
+    width: 300px;
+    height: 300px;
+    background-size: 80%;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -269,15 +276,18 @@ section.success a.active {
 }
 
 #portfolio .img-responsive {
-    height: 270px;
-    width: 374px;
+    min-width: 100%;
+    height: auto;
 }
 
 #contact {
     height: auto;
 }
 
-
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
 
 
 
@@ -487,4 +497,14 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+#portItem1 {
+    background: #fff url('../img/portfolio/meets.png') no-repeat center center;
+}
+#portItem2 {
+    background: #fff url('../img/portfolio/cake.png') no-repeat center center;
+}
+#portItem3 {
+    background: #fff url('../img/portfolio/circus.png') no-repeat center center;
 }
