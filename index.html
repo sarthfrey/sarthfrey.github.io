@@ -119,7 +119,7 @@
                             </li>
                         </ul> -->
                         <hr class="star-light">
-                        <span class="skills">The thinker and party drinker who likes to tinker.</span>
+                        <span class="skills">*Insert dank slogan here*</span>
                     </div>
                     <br><br>
                     <ul class="list-inline">
@@ -170,10 +170,10 @@
                         <b>Languages</b>: Python, Java, C++, LabVIEW, Javascript, PHP, Go, and Arduino.
                     </p>
                     <p>
-                        <b>Frameworks and Libraries</b>: Pyglet, SciKit Learn, Android SDK, and Windriver.
+                        <b>Frameworks and Libraries</b>: Pyglet, Turtle, SciKit Learn, Android SDK, Windriver, and WPI.
                     </p>
                     <p>
-                        <b>Datastores</b>: MySQL and very basic MongoDB.
+                        <b>Datastores</b>: MySQL and MongoDB.
                     </p>
                     <p>
                         <b>Markup</b>: HTML and XML.
@@ -218,7 +218,7 @@
                         </div>
                     </div>
                 </a>
-                <!-- <div class="col-sm-4 portfolio-item" id="portItem4">
+                <div class="col-sm-4 portfolio-item" id="portItem4">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -247,7 +247,7 @@
                         </div>
                         <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
                     </a>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>
@@ -359,6 +359,23 @@
         </div>
     </footer>
 
+    <script type="text/javascript">
+        function handleBtnKeyUp(event) {
+            event = event || window.event;
+            if (event.keyCode === 32) { // check for Space key
+              handleBtnClick(event);
+            }
+        }
+
+        function handleBtnClick(event) {
+            event = event || window.event;
+            var pressed = event.target.getAttribute("aria-pressed") == "true";
+            //change the aria-pressed value as the button is toggled:
+            event.target.setAttribute("aria-pressed", pressed ? "false" : "true");
+            //... (perform the button's logic here)
+          }
+    </script>
+
     <!-- Portfolio Modals -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -374,7 +391,7 @@
                         <div class="modal-body">
                             <h2>Meets</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/meets.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/meets.png" class="img-responsive img-centered img-modal" alt="">
                             <p>Meets is an Android application that allows users to schedule and coordinate daily meetups through
                                 synchronized geolocation updated in real-time. Users establish what time interval their location is
                                 tracked and by whom, in order to ensure geolocation is only used for its intended purpose. Any user
@@ -383,7 +400,7 @@
                                 need in the app market today through ethically feasible geolocation.
                             </p>
                             <ul class="list-inline item-details">
-                                <li>Client:
+                                <li>Built for:
                                     <strong>
                                         U of T Hacks
                                     </strong>
@@ -393,7 +410,7 @@
                                         February 2015
                                     </strong>
                                 </li>
-                                <li>Service:
+                                <li>Tools:
                                     <strong>
                                         Android Development
                                     </strong>
@@ -409,30 +426,36 @@
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+                <button role="button" aria-pressed="false" onclick="handleBtnClick(event)" onKeyUp="handleBtnKeyUp(event)" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Lorem Ipsum</h2>
+                            <h2>Tic Tac Toe</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. </p>
+                            <span><img src="img/portfolio/tictactoe.png" class="img-responsive img-centered img-modal" alt=""></span>
+                            <span>
+                                <p>
+                                    Although Tic Tac Toe isn't the most difficult program to code by any means, I have added it to my portfolio
+                                    because it marks my first project where I simply thought 'what if I made this', and then made it. In
+                                    addition, it was not done with any GUI - only the command line, with the board expressed as characters and
+                                    the markers placed through coordinate input. This project led me to start learning GUI programmng, a skill
+                                    vital to any software developer. I have written this both in Python and C++, including PvP and AI. The game
+                                    also tallies how many wins each player has and states it at the end of each game.
+                                </p>
+                            </span>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Lorem Ipsum
+                                <li>Built for:
+                                    <strong>Myself
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong>Lorem Ipsum
+                                    <strong>2013 - 2015
                                     </strong>
                                 </li>
-                                <li>Service:
-                                    <strong>Lorem Ipsum
+                                <li>Tools:
+                                    <strong>Python and C++
                                     </strong>
                                 </li>
                             </ul>
@@ -457,10 +480,10 @@
                         <div class="modal-body">
                             <h2>Lorem Ipsum</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/maze.png" class="img-responsive img-centered img-modal" alt="">
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. </p>
                             <ul class="list-inline item-details">
-                                <li>Client:
+                                <li>Built for:
                                     <strong>Lorem Ipsum
                                     </strong>
                                 </li>
@@ -468,7 +491,7 @@
                                     <strong>Lorem Ipsum
                                     </strong>
                                 </li>
-                                <li>Service:
+                                <li>Tools:
                                     <strong>Lorem Ipsum
                                     </strong>
                                 </li>
@@ -494,10 +517,10 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/game.png" class="img-responsive img-centered img-modal" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
+                                <li>Built for:
                                     <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
                                     </strong>
                                 </li>
@@ -505,7 +528,7 @@
                                     <strong><a href="http://startbootstrap.com">April 2014</a>
                                     </strong>
                                 </li>
-                                <li>Service:
+                                <li>Tools:
                                     <strong><a href="http://startbootstrap.com">Web Development</a>
                                     </strong>
                                 </li>
@@ -531,10 +554,10 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/safe.png" class="img-responsive img-centered img-modal" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
+                                <li>Built for:
                                     <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
                                     </strong>
                                 </li>
@@ -542,7 +565,7 @@
                                     <strong><a href="http://startbootstrap.com">April 2014</a>
                                     </strong>
                                 </li>
-                                <li>Service:
+                                <li>Tools:
                                     <strong><a href="http://startbootstrap.com">Web Development</a>
                                     </strong>
                                 </li>
@@ -568,10 +591,10 @@
                         <div class="modal-body">
                             <h2>Project Title</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
+                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered img-modal" alt="">
                             <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
+                                <li>Built for:
                                     <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
                                     </strong>
                                 </li>
@@ -579,7 +602,7 @@
                                     <strong><a href="http://startbootstrap.com">April 2014</a>
                                     </strong>
                                 </li>
-                                <li>Service:
+                                <li>Tools:
                                     <strong><a href="http://startbootstrap.com">Web Development</a>
                                     </strong>
                                 </li>
@@ -636,15 +659,17 @@
     <style>
     #top-link-block.affix-top {
         position: absolute; /* allows it to "slide" up into view */
-        bottom: -82px;
-        right: 18px;
+        bottom: -200px;
+        right: 40px;
     }
     #top-link-block.affix {
         position: fixed; /* keeps it on the bottom once in view */
-        bottom: 18px;
-        right: 18px;
+        bottom: 40px;
+        right: 40px;
     }
     </style>
+
+
 
 
 </body>
