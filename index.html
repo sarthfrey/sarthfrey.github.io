@@ -46,6 +46,17 @@
         })();
     </script>
 
+    <script type="text/javascript">
+        $(document).keyup(function(e) { 
+            if (e.keyCode == 27) { 
+               //hides modal overlay background when escape key pressed
+               $('.portfolio-modal').hide();
+               //hides all modal boxes when escape key pressed
+               $('.modal').hide();
+            } 
+        });
+    </script>
+
 </head>
 
 <body id="page-top" class="index">
