@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: 300; }
 
 /** Links */
 a { color: #859900; text-decoration: none; }
-a:visited { color: #434d00; }
+a:visited { color: #859900; }
 a:hover { color: #111; text-decoration: underline; }
 
 /** Blockquotes */
